@@ -1,19 +1,21 @@
 const Hero = () => {
   return (
-    <section className="bg-hero-banner min-h-screen bg-[#BD1F17] bg-cover bg-center pt-24">
+    <section className="bg-hero-banner min-h-screen bg-[#BD1F17] bg-cover bg-center pt-24 mb-10">
       <div className="max-w-7xl mx-auto mt-10 flex items-center relative justify-between">
         <div className="text-white max-w-lg">
-          <h1 className="font-bebas text-9xl absolute top-28 max-w-4xl bg-red-600/20">
+          <h1 className="font-bebas text-9xl absolute top-28 max-w-4xl bg-gradient-to-r from-[#BD1F17]/5 via-[#BD1F17]/10 to-[#BD1F17]/40">
             Taste the authentic Saudi cuisine
           </h1>
-          <p className="text-xl font-roboto translate-y-28">
-            Among the best Saudi chefs in the world, serving you something
-            beyond flavor.
-          </p>
+          <div className="translate-y-32">
+            <p className="text-xl font-roboto mb-6">
+              Among the best Saudi chefs in the world, serving you something
+              beyond flavor.
+            </p>
 
-          <button className="bg-[#FEBF00] p-3 text-sm font-roboto font-bold">
-            BOOK A TABLE
-          </button>
+            <button className="bg-[#FEBF00] uppercase p-3 text-sm font-roboto text-[#0A1425] font-bold">
+              Explore Menu
+            </button>
+          </div>
         </div>
 
         <div className="flex justify-center items-center">

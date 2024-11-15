@@ -1,3 +1,4 @@
+import About from "./componets/About";
 import Hero from "./componets/Hero";
 import Nav from "./componets/shared/Nav";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      <About />
     </>
   );
 }

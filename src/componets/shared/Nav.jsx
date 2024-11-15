@@ -31,13 +31,17 @@ const Nav = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full p-4 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full p-4 z-50 transition-all duration-300 ${
         scrolling ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center gap-x-16 justify-center">
-          <div className="text-2xl text-white flex gap-x-2">
+          <div
+            className={`text-2xl ${
+              scrolling ? "text-gray-800" : "text-white"
+            } flex gap-x-2`}
+          >
             <img src="/logo.svg" alt="logo" />
             <p>
               <span className="font-semibold">Restau</span>
@@ -51,7 +55,7 @@ const Nav = () => {
                 href={link.href}
                 className={`${
                   scrolling ? "text-gray-800" : "text-white"
-                } hover:text-gray-600 text-sm font-raleway`}
+                } hover:text-[#FEBF00] text-sm font-raleway`}
               >
                 {link.name}
               </a>
