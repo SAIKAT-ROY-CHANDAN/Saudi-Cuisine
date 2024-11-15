@@ -63,7 +63,7 @@ const Nav = () => {
           </div>
         </div>
 
-        <button className="bg-[#FEBF00] p-3 text-sm font-roboto font-bold">
+        <button className="bg-[#FEBF00] hidden md:block p-3 text-sm font-roboto font-bold">
           BOOK A TABLE
         </button>
         {/* Hamburger Icon for Mobile */}
