@@ -5,28 +5,28 @@ const Footer = () => {
       title: "Opening hours",
       subtitle: "Within 30 minutes",
       desc: "Monday - Sunday",
-      icon: "/public/images/clock.svg",
+      icon: "/images/clock.svg",
     },
     {
       id: 2,
       title: "LET'S TALK",
       subtitle: "Phone: 1-800-222-4545",
       desc: "Fax: 1-800-222-4545",
-      icon: "/public/images/call-alt (1).svg",
+      icon: "/images/call-alt (1).svg",
     },
     {
       id: 3,
       title: "BOOK A TABLE",
       subtitle: "Email: demo@website.com",
       desc: "Support: support@website.com",
-      icon: "/public/images/mail.svg",
+      icon: "/images/mail.svg",
     },
     {
       id: 4,
       title: "Our Address",
       subtitle: "123 Stree New York City",
       desc: "United States Of America.",
-      icon: "/public/images/map-pin.svg",
+      icon: "/images/map-pin.svg",
     },
   ];
 
@@ -53,22 +53,22 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-center gap-x-4 mb-8">
           <img
-            src="/public/images/facebook-circle.svg"
+            src="/images/facebook-circle.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
           <img
-            src="/public/images/facebook-circle.svg"
+            src="/images/facebook-circle.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
           <img
-            src="/public/images/facebook-circle.svg"
+            src="/images/facebook-circle.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
           <img
-            src="/public/images/facebook-circle.svg"
+            src="/images/facebook-circle.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />

@@ -8,25 +8,25 @@ const ItemsCarousel = () => {
       title: "vegetables burger",
       subtitle: "Barbecue Italian cuisine pizza",
       image:
-        "/public/images/classic-burger-with-beef-cutlet-vegetables-onions-isolated-white-background 1.png",
+        "/images/classic-burger-with-beef-cutlet-vegetables-onions-isolated-white-background 1.png",
     },
     {
       id: 2,
       title: "Spacial Pizza",
       subtitle: "Barbecue Italian cuisine pizza",
-      image: "/public/images/pizza 1.png",
+      image: "/images/pizza 1.png",
     },
     {
       id: 3,
       title: "Spacial French fries ",
       subtitle: "Barbecue Italian cuisine",
-      image: "/public/images/french-fries 1.png",
+      image: "/images/french-fries 1.png",
     },
     {
       id: 4,
       title: "Cuisine Chicken",
       subtitle: "Japanese Cuisine Chicken",
-      image: "/public/images/fried-shrimp-prawn-cake-white-plate 1.png",
+      image: "/images/fried-shrimp-prawn-cake-white-plate 1.png",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

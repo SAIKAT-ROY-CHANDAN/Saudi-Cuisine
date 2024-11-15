@@ -1,5 +1,5 @@
 import { useState } from "react";
-import quotation from "/public/images/“.svg";
+import quotation from "/images/“.svg";
 
 const Testimonial = () => {
   const cards = [
@@ -8,15 +8,16 @@ const Testimonial = () => {
       name: "First Slide",
       address: "Riyadh, Saudi",
       description:
-        "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+        "The Chicken Mandi here is a game changer! Each bite is a delightful blend of perfectly spiced chicken and aromatic rice. The juiciness of the chicken will leave you craving for more.",
       image:
-        "https://img.freepik.com/free-photo/grilled-beef-burger-with-fries-cheese-tomato-generative-ai_188544-8466.jpg?t=st=1731661453~exp=1731665053~hmac=91e67f66d2a1830e7b130229cf665c676b3b0ed01c6caabc2d1fe1d935a86c1a&w=1380",
+        "https://img.freepik.com/free-photo/grilled-gourmet-burger-with-cheese-tomato-onion-french-fries-generated-by-artificial-intelligence_25030-63181.jpg",
     },
     {
       id: 2,
       name: "Second Slide",
       address: "Riyadh, Saudi",
-      description: "This is the description for the second slide.",
+      description:
+        "The double-patty burger was a masterpiece. With layers of fresh lettuce, melted cheese, and perfectly grilled patties, it offered a burst of flavors in every bite. A must-try for burger lovers!",
       image:
         "https://img.freepik.com/free-photo/huge-burger-with-fried-meat-vegetables_140725-971.jpg?t=st=1731661497~exp=1731665097~hmac=c546034ca5a354a47cf084ecf53e772a72cc33a02026aec3f665ed1492a48e2a&w=740",
     },
@@ -24,7 +25,8 @@ const Testimonial = () => {
       id: 3,
       name: "Third Slide",
       address: "Riyadh, Saudi",
-      description: "This is the description for the third slide.",
+      description:
+        "This burger redefines indulgence. The smoky flavor of the meat, paired with crispy onion rings and tangy sauces, delivers a dining experience that is simply unforgettable.",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Dft9P7WYfNAQj0tWH319hfHA6qURgaL7Aw&s",
     },
@@ -32,7 +34,8 @@ const Testimonial = () => {
       id: 4,
       name: "Fourth Slide",
       address: "Riyadh, Saudi",
-      description: "This is the description for the fourth slide.",
+      description:
+        "Looking for comfort food? This burger hits all the right spots! With its buttery bun and juicy filling, it’s the perfect way to satisfy your cravings.",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YNVwJV-2IIK2-ZMOrNnfA0BU33gVgNX-bQ&s",
     },
@@ -111,7 +114,7 @@ const Testimonial = () => {
         {/* Carousel Content */}
         <div className="flex bg-red-50 items-center">
           <div className="w-[40%] bg-[#FEBF00] p-16 h-[50vh] flex flex-col justify-between">
-              <img src={quotation} alt="quotation" className="size-4" />
+            <img src={quotation} alt="quotation" className="size-4" />
             <div className="flex-grow">
               <p className="text-gray-800 font-roboto max-w-xs pl-4 leading-8 font-medium">
                 {currentCard.description}
@@ -136,7 +139,7 @@ const Testimonial = () => {
             <img
               src={currentCard.image}
               alt={currentCard.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/70 to-black/20"></div>
           </div>
