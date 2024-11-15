@@ -6,6 +6,7 @@ import ItemsCarousel from "./componets/ItemsCarousel";
 import Footer from "./componets/shared/Footer";
 import Testimonial from "./componets/testimonial";
 
+
 function App() {
   return (
     <>
