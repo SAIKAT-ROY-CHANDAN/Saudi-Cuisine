@@ -1,5 +1,5 @@
 import AboutTabs from "./ui/Tabs";
-import aboutImg from "/public/images/about image.png";
+import aboutImg from "/images/about image.png";
 
 const About = () => {
   const serviceData = [
@@ -7,19 +7,19 @@ const About = () => {
       id: 1,
       title: "fast delivery",
       desc: "Within 30 minutes",
-      icon: "/public/images/Vector.svg",
+      icon: "/images/Vector.svg",
     },
     {
       id: 2,
       title: "absolute dining",
       desc: "Best buffet restaurant",
-      icon: "/public/images/medal.svg",
+      icon: "/images/medal.svg",
     },
     {
       id: 3,
       title: "pickup delivery",
       desc: "Grab your food order",
-      icon: "/public/images/bag.svg",
+      icon: "/images/bag.svg",
     },
   ];
 
@@ -40,7 +40,7 @@ const About = () => {
               <img
                 src={service.icon}
                 alt={service.title}
-                className="p-5 bg-white drop-shadow-lg rounded-full"
+                className="p-5 bg-white drop-shadow-md rounded-full"
               />
               <div>
                 <h1 className="font-bebas text-2xl">{service.title}</h1>

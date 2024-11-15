@@ -112,7 +112,7 @@ export default function AboutTabs() {
                 About More
               </button>
               <div className="flex gap-x-3">
-                <img src="/public/images/call-alt.svg" alt="call" className="size-6" />
+                <img src="/images/call-alt.svg" alt="call" className="size-6" />
                 <p className="font-roboto text-[#0A1425] font-bold">+88 3426 739 485</p>
               </div>
             </div>

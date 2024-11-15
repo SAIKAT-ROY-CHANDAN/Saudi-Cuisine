@@ -20,7 +20,7 @@ const Hero = () => {
 
         <div className="flex justify-center items-center">
           <img
-            src="../../public/images/hero-image.png"
+            src="../../images/hero-image.png"
             alt="Hero Image"
             className="w-full h-auto max-w-2xl"
           />
