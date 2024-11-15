@@ -16,7 +16,8 @@ export default {
       },
       backgroundImage: {
         "hero-banner": "url('/public/images/banner-svg.svg')",
-        "contact-banner": "url('/public/images/contact banner.png')"
+        "contact-banner": "url('/public/images/contact banner.png')",
+        "footer-banner": "url('/public/images/Footer.png')"
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', "sans-serif"],

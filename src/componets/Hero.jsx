@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="bg-hero-banner min-h-screen bg-[#BD1F17] bg-cover bg-center pt-24 mb-10">
+    <section id="#home" className="bg-hero-banner min-h-screen bg-[#BD1F17] bg-cover bg-center pt-24 mb-10">
       <div className="max-w-7xl mx-auto mt-10 flex items-center relative justify-between">
         <div className="text-white max-w-lg">
           <h1 className="font-bebas text-9xl absolute top-28 max-w-4xl bg-gradient-to-r from-[#BD1F17]/5 via-[#BD1F17]/10 to-[#BD1F17]/40">

@@ -24,7 +24,7 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <section id="about">
       <div className="max-w-7xl mx-auto my-20">
         <div className="flex justify-between pb-16">
           <div className="max-w-[620px]">
@@ -50,7 +50,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

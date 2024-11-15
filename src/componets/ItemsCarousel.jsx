@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from "react";
 
 const ItemsCarousel = () => {
   const cards = [
@@ -39,6 +40,14 @@ const ItemsCarousel = () => {
       (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="bg-[#FBF7F2] py-28">

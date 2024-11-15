@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="bg-contact-banner h-lvh mb-20 bg-cover bg-center">
+    <section id="#contact" className="bg-contact-banner h-lvh mb-20 bg-cover bg-center">
       <div className="max-w-7xl mx-auto space-y-6 flex flex-col h-full justify-center">
         <div>
           <div className="text-red-600 font-roboto text-sm font-bold mb-2 flex items-center gap-x-2">
