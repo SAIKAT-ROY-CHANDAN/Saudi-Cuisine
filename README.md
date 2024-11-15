@@ -1,8 +1,21 @@
-# React + Vite
+# Converted Figma Design to Responsive Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a conversion of a Figma design into a responsive and functional website. The implementation adheres to the requirements specified in the task description, with additional features added to enhance usability and functionality.
 
-Currently, two official plugins are available:
+## 🚀 Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://saudi-cuisine.vercel.app/
+
+## 🛠️ Technologies Used
+
+- **Frontend Framework**: React.js (or replace with the framework used, if any)
+- **Styling**: Tailwind CSS (or replace with the library/framework used, if any)
+
+## ✨ Features
+
+1. **Sticky Header**: The header section remains fixed at the top of the viewport during scrolling.
+2. **About Section**: Includes working tabs with relevant (dummy) content for each tab.
+3. **Carousel**: Autoplay with loop functionality, including duplicate items for seamless cycling.
+4. **Testimonials**: Interactive slider with slide effect.
+
+
