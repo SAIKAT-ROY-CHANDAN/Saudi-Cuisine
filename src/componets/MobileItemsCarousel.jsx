@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 
-const ItemsCarousel = () => {
+const MobileItemsCarousel = () => {
   const cards = [
     {
       id: 1,
@@ -50,8 +50,8 @@ const ItemsCarousel = () => {
   }, []);
 
   return (
-    <section className="bg-[#FBF7F2] py-28 hidden lg:block">
-      <div className="relative xl:mx-auto lg:mx-10 max-w-7xl overflow-hidden">
+    <section className="bg-[#FBF7F2] py-20 lg:hidden">
+      <div className="relative lg:mx-auto mx-10 max-w-7xl overflow-hidden">
         <div className="flex justify-between items-center mb-4">
           <div>
             <div className="text-brand-400 font-roboto text-sm font-bold mb-2 flex items-center gap-x-2">
@@ -60,55 +60,15 @@ const ItemsCarousel = () => {
             </div>
             <h2 className="text-4xl font-bebas">POPULAR FOOD ITEMS</h2>
           </div>
-          <div className="flex gap-4">
-            <button
-              className="bg-white text-brand-500 p-3 rounded-full drop-shadow hover:bg-brand-700 hover:text-white transition duration-300"
-              onClick={handlePrev}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5 8.25 12l7.5-7.5"
-                />
-              </svg>
-            </button>
-            <button
-              className="bg-white text-brand-500 p-3 rounded-full drop-shadow hover:bg-brand-700 hover:text-white transition duration-300"
-              onClick={handleNext}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
 
-        <div className="flex transition-transform ease-in-out lg:hidden xl:block gap-x-6 duration-300">
+        <div className="transition-transform ease-in-out hidden sm:block lg:hidden duration-300 mb-4">
           <div className="flex gap-x-4">
             {cards
               .concat(cards)
-              .slice(currentIndex, currentIndex + 4)
+              .slice(currentIndex, currentIndex + 2)
               .map((card, index) => (
-                <div key={index} className="bg-white p-4 w-80">
+                <div key={index} className="bg-white mx-auto p-4 w-80">
                   <div className="object-cover object-center flex items-center justify-center mx-auto">
                     <img src={card.image} alt={card.title} className="h-36" />
                   </div>
@@ -123,10 +83,10 @@ const ItemsCarousel = () => {
               ))}
           </div>
         </div>
-        <div className="flex transition-transform ease-in-out xl:hidden gap-x-6 duration-300">
+        <div className="transition-transform ease-in-out sm:hidden duration-300 mb-4">
           {cards
             .concat(cards)
-            .slice(currentIndex, currentIndex + 3)
+            .slice(currentIndex, currentIndex + 1)
             .map((card, index) => (
               <div key={index} className="bg-white p-4 w-80 mx-auto">
                 <div className="object-cover object-center flex items-center justify-center mx-auto">
@@ -142,9 +102,49 @@ const ItemsCarousel = () => {
               </div>
             ))}
         </div>
+        <div className="flex gap-4 justify-center">
+          <button
+            className="bg-white text-brand-500 p-3 rounded-full drop-shadow hover:bg-brand-700 hover:text-white transition duration-300"
+            onClick={handlePrev}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button
+            className="bg-white text-brand-500 p-3 rounded-full drop-shadow hover:bg-brand-700 hover:text-white transition duration-300"
+            onClick={handleNext}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   );
 };
 
-export default ItemsCarousel;
+export default MobileItemsCarousel;

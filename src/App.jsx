@@ -1,10 +1,11 @@
 import Nav from "./componets/shared/Nav";
 import Hero from "./componets/Hero";
 import About from "./componets/About";
-import Contact from "./componets/Contact";
 import ItemsCarousel from "./componets/ItemsCarousel";
-import Footer from "./componets/shared/Footer";
-import Testimonial from "./componets/Testimonial";
+// import Contact from "./componets/Contact";
+// import Footer from "./componets/shared/Footer";
+// import Testimonial from "./componets/Testimonial";
+import MobileItemsCarousel from "./componets/MobileItemsCarousel";
 
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
       <Hero />
       <About />
       <ItemsCarousel />
-      <Contact />
+      <MobileItemsCarousel />
+      {/* <Contact />
       <Testimonial />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

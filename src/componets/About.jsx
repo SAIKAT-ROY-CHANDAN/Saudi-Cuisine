@@ -25,8 +25,8 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="max-w-7xl mx-auto my-20">
-        <div className="flex justify-between pb-16">
+      <div className="max-w-7xl mx-10 lg:mx-auto my-20">
+        <div className="flex flex-col gap-y-10 lg:flex-row justify-between pb-10 lg:pb-16">
           <div className="max-w-[620px]">
             <img src={aboutImg} alt="burger-img" />
           </div>
@@ -34,7 +34,7 @@ const About = () => {
             <AboutTabs />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col gap-y-8 lg:flex-row justify-between">
           {serviceData.map((service) => (
             <div key={service.id} className="flex gap-x-5 items-center">
               <img
