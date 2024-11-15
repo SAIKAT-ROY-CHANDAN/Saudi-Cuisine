@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <section id="#contact" className="bg-contact-banner h-lvh mb-20 bg-cover bg-center">
-      <div className="max-w-7xl mx-auto space-y-6 flex flex-col h-full justify-center">
+      <div className="max-w-7xl mx-10 2xl:mx-auto space-y-6 flex flex-col h-full justify-center">
         <div>
           <div className="text-red-600 font-roboto text-sm font-bold mb-2 flex items-center gap-x-2">
             <div className="bg-red-600 size-3"></div> Book Now
@@ -9,15 +9,15 @@ const Contact = () => {
           <h2 className="text-5xl font-bebas text-white mb-2">
             BOOK YOUR TABLE
           </h2>
-          <p className="text-white max-w-lg text-sm">
+          <p className="text-white max-w-lg font-roboto lg:text-sm">
             Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
             molestie vel, ornare non id blandit netus.
           </p>
         </div>
-        <div className="max-w-lg space-y-6">
-          <div className="flex gap-x-6">
+        <div className="max-w-lg lg:space-y-6">
+          <div className="flex flex-col lg:flex-row gap-x-6">
             <div
-              className="relative mb-3 border w-1/2 border-gray-300"
+              className="relative mb-3 border lg:w-1/2 border-gray-300"
               data-twe-input-wrapper-init
             >
               <input
@@ -31,7 +31,7 @@ const Contact = () => {
               </label>
             </div>
             <div
-              className="relative mb-3 w-1/2 border border-gray-300"
+              className="relative mb-3 lg:w-1/2 border border-gray-300"
               data-twe-input-wrapper-init
             >
               <input
@@ -45,9 +45,9 @@ const Contact = () => {
               </label>
             </div>
           </div>
-          <div className="flex gap-x-6">
+          <div className="flex flex-col lg:flex-row gap-x-6">
             <div
-              className="relative mb-3 border w-1/2 border-gray-300"
+              className="relative mb-3 border lg:w-1/2 border-gray-300"
               data-twe-input-wrapper-init
             >
               <input
@@ -61,7 +61,7 @@ const Contact = () => {
               </label>
             </div>
             <div
-              className="relative mb-3 w-1/2 border border-gray-300"
+              className="relative mb-3 lg:w-1/2 border border-gray-300"
               data-twe-input-wrapper-init
             >
               <input

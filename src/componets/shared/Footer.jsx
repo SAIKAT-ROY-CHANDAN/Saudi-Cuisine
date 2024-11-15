@@ -31,12 +31,12 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-footer-banner h-[600px] bg-cover bg-center">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-footer-banner min-h-screen py-10 md:min-h-0 xl:h-[600px] bg-cover bg-center">
+      <div className="max-w-7xl mx-10 2xl:mx-auto">
         <h1 className="font-bebas text-white text-5xl text-center py-20">
           We ready to have you the best dining experiences
         </h1>
-        <div className="flex justify-between mb-24">
+        <div className="flex flex-col md:flex-row gap-y-6 justify-between mb-24">
           {serviceData.map((service) => (
             <div
               key={service.id}
@@ -58,17 +58,17 @@ const Footer = () => {
             alt="facebook"
           />
           <img
-            src="/images/facebook-circle.svg"
+            src="/images/linkedin-round.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
           <img
-            src="/images/facebook-circle.svg"
+            src="/images/instagram-round.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
           <img
-            src="/images/facebook-circle.svg"
+            src="/images/twitter-round-new-alt.svg"
             className="border p-3 rounded-full"
             alt="facebook"
           />
