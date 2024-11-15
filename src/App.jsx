@@ -4,7 +4,7 @@ import About from "./componets/About";
 import Contact from "./componets/Contact";
 import ItemsCarousel from "./componets/ItemsCarousel";
 import Footer from "./componets/shared/Footer";
-import Testimonial from "./componets/testimonial";
+import Testimonial from "./componets/Testimonial";
 
 
 function App() {
