@@ -1,10 +1,12 @@
 # Converted Figma Design to Responsive Website
 
+![Banner](https://i.ibb.co/xmtSr6k/image.png)
+
 This project is a conversion of a Figma design into a responsive and functional website. The implementation adheres to the requirements specified in the task description, with additional features added to enhance usability and functionality.
 
 ## 🚀 Live Preview
 
-https://saudi-cuisine.vercel.app/
+[Live Preview](https://saudi-cuisine.vercel.app/)
 
 ## 🛠️ Technologies Used
 
@@ -17,5 +19,3 @@ https://saudi-cuisine.vercel.app/
 2. **About Section**: Includes working tabs with relevant (dummy) content for each tab.
 3. **Carousel**: Autoplay with loop functionality, including duplicate items for seamless cycling.
 4. **Testimonials**: Interactive slider with slide effect.
-
-
