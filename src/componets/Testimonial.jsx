@@ -5,7 +5,7 @@ const Testimonial = () => {
   const cards = [
     {
       id: 1,
-      name: "First Slide",
+      name: "Jubayer Ansari",
       address: "Riyadh, Saudi",
       description:
         "The Chicken Mandi here is a game changer! Each bite is a delightful blend of perfectly spiced chicken and aromatic rice. The juiciness of the chicken will leave you craving for more.",
@@ -14,7 +14,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      name: "Second Slide",
+      name: "Boktiar Khilji",
       address: "Riyadh, Saudi",
       description:
         "The double-patty burger was a masterpiece. With layers of fresh lettuce, melted cheese, and perfectly grilled patties, it offered a burst of flavors in every bite. A must-try for burger lovers!",
@@ -23,7 +23,7 @@ const Testimonial = () => {
     },
     {
       id: 3,
-      name: "Third Slide",
+      name: "Sriajudullah",
       address: "Riyadh, Saudi",
       description:
         "This burger redefines indulgence. The smoky flavor of the meat, paired with crispy onion rings and tangy sauces, delivers a dining experience that is simply unforgettable.",
@@ -32,7 +32,7 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      name: "Fourth Slide",
+      name: "Md Salah",
       address: "Riyadh, Saudi",
       description:
         "Looking for comfort food? This burger hits all the right spots! With its buttery bun and juicy filling, it’s the perfect way to satisfy your cravings.",
@@ -56,7 +56,7 @@ const Testimonial = () => {
   const currentCard = cards[currentIndex];
 
   return (
-    <section>
+    <section className="relative">
       <div className="relative max-w-7xl mb-10 mx-10 xl:mx-auto">
         {/* Top Section with Title and Buttons */}
         <div className="flex justify-between items-center mb-6">
@@ -117,18 +117,18 @@ const Testimonial = () => {
         <div className="flex flex-col-reverse md:flex-row bg-red-50 items-center">
           <div className="lg:w-[40%] w-full bg-[#FEBF00] lg:p-16 p-6 h-[40vh] md:h-[50vh] flex flex-col justify-between">
             <div className="flex-grow mx-auto lg:mx-0">
-            <img src={quotation} alt="quotation" className="size-4" />
+              <img src={quotation} alt="quotation" className="size-4" />
               <p className="text-gray-800 font-roboto max-w-xs pl-4 leading-8 font-medium">
                 {currentCard.description}
               </p>
             </div>
 
-            <div className="flex items-center gap-x-40 justify-center lg:gap-x-0 lg:justify-between">
+            <div className="flex items-center gap-x-40 justify-center mb-1 lg:gap-x-0 lg:justify-between">
               <div>
                 <h1 className="font-bebas text-xl">{currentCard.name}</h1>
                 <h1>{currentCard.address}</h1>
               </div>
-              <div>
+              <div className="border-b-4 border-brand-500 pb-1">
                 <img
                   className="w-10 h-10 rounded-full"
                   src="https://fdopportunities.com/wp-content/uploads/2019/12/fdo-bsherman-480x480.jpg"
@@ -136,6 +136,7 @@ const Testimonial = () => {
                 />
               </div>
             </div>
+              <div className="border-[0.40px] border-gray-600 sm:w-80 md:w-full w-full mx-auto" />
           </div>
           <div className="lg:w-[60%] h-60 w-full md:h-[50vh] relative">
             <img
@@ -189,6 +190,11 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+      <img
+        src="/images/tomato.png"
+        className="absolute bottom-0 left-0 transform translate-x-[-20%] -translate-y-72 2xl:block hidden size-28 h-auto"
+        alt="pepper"
+      />
     </section>
   );
 };
