@@ -50,7 +50,7 @@ const ItemsCarousel = () => {
   }, []);
 
   return (
-    <section className="bg-[#FBF7F2] py-28 hidden lg:block">
+    <section className="bg-[#FBF7F2] py-28 hidden lg:block relative">
       <div className="relative xl:mx-auto lg:mx-10 max-w-7xl overflow-hidden">
         <div className="flex justify-between items-center mb-4">
           <div>
@@ -143,6 +143,12 @@ const ItemsCarousel = () => {
             ))}
         </div>
       </div>
+
+      <img
+        src="/images/about corner.png"
+        className="absolute bottom-0 left-0 transform translate-x-[-58%] hidden 2xl:block -translate-y-10 -rotate-45 w-96 h-auto"
+        alt="pepper"
+      />
     </section>
   );
 };
